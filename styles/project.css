@@ -1,0 +1,66 @@
+body{
+  /* background-color: aliceblue; */
+  /* background-image: unset; */
+  background-image: url(../login.jpg);
+}
+.container-box {
+  background-color: #D2691E;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.file-box {
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+}
+.file-box h3 {
+  margin: 0;
+}
+.file-box input[type="file"] {
+  margin-bottom: 10px;
+}
+.feedback-box {
+  background-color: beige;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.feedback-box textarea {
+  width: 100%;
+}
+/* Additional styles for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+/* Additional styles for the feedback form */
+.feedback-container {
+  background-color: beige;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+input[type="submit"] {
+  margin-top: 10px;
+}
+form {
+  margin: 0;
+  border-radius: 10px;
+  padding: 40px 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgba(147, 149, 151, 0.5);
+  background-color: #ffffffdd;
+}

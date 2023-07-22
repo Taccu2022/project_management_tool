@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management System</title>
+  <link rel="icon" href="../images/logo1.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../admin.css">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    /* Additional styles for the form */
+    form {
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 40px 30px;
+      margin-top: 50px;
+      box-shadow: -3px -3px 9px #aaa9a9a2, 3px 3px 7px rgba(147, 149, 151, 0.5);
+      background-color: #ffffffdd;
+    }
+
+    /* Fixed footer at the bottom of the page */
+    body {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Your existing HTML code here -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="../images/logo1.png" alt="LOGO" height="40">
+    </a>
+    <span class="navbar-text">Student: ALOK KUMAR</span>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="project.php">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skill.php">View Skill Matrix</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mail.php">Mail</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-logout active" href="../logout.php">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+            <form method="post" action="project.php" enctype="multipart/form-data">
+            <div style="background-color: beige;">
+              <br>
+              <h3>Project Proposal</h3><br>
+              <input type="file" name="ppf"><br><br>
+              <input type="submit" name="bppf" value="Upload"><br><br>
+            </div>
+            </form>
+          </td>
+          <td>
+            <form method="post" action="project.php" enctype="multipart/form-data"></form>
+            <div style="background-color: beige;">
+              <br>
+              <h3>Project Specification</h3><br>
+              <input type="file" name="psf"><br><br>
+              <input type="submit" name="bpsf" value="Upload"><br><br>
+            </div>
+            </form>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <br><br>
+  <div class="feedback-container">
+    <form method="post" action="project.php">
+      <br>
+      <input type="submit" name="feedback" value="Get Feedback"><br><br>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© Alok Kumar 23 | Email: ak0914850@gmail.com | Address: Tezpur University, Tezpur, Assam, 784028</p>
+    <p>About: Currently pursuing MCA from Tezpur University, Assam, done BCA from Dr. Shyama Prasad Mukherjee University,
+      Jharkhand Ranchi</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

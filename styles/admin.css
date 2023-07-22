@@ -1,0 +1,32 @@
+body {
+  background-image: url(home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-text {
+  font-size: 24px;
+  color: white;
+  flex: 1;
+  text-align: center;
+}
+
+.btn-logout {
+  background-color: #f08080;
+  border-color: #f08080;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+/* width: 100%; */
+}
+
+main {
+  flex-grow: 1;
+}
