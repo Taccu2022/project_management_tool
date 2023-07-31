@@ -89,21 +89,27 @@ if(empty($_SESSION['User']))
     include('s_header.php');
 ?>
 
-
+<div class="form-container">
   <form method="post" action="project.php" enctype="multipart/form-data">
     <table>
       <tr>
         <td>&nbsp;</td>
         <td>
-          <div style="background-color: beige;">
+          <div class="form-group">
             <br />
-            <h3>Project Proposal</h3><br />
-            <input type="file" name="ppf" /><br /><br />
-            <input type="submit" name="bppf" value="Upload" /><br /><br />
+            <h3 class="text-center mb-4">Project Proposal</h3><br />
+            <input type="file" name="ppf"/><br /><br />
+            <input type="submit" name="bppf" value="Upload" class="btn btn-primary"/><br /><br />
           </div>
         </td>
+      </tr>
+    </table>
+  </form>
+  <form method="post" action="project.php" enctype="multipart/form-data">
+    <table>
+      <tr>
         <td>
-          <div style="background-color: beige;">
+          <div class="form-group">
             <br />
             <h3>Project Specification</h3><br />
             <input type="file" name="psf" /><br /><br />
@@ -112,16 +118,17 @@ if(empty($_SESSION['User']))
         </td>
         <td>&nbsp;</td>
         <td>
-        <?php
+          <?php
           if (isset($_GET['status'])) {
             $status = htmlspecialchars($_GET['status']);
-            echo '<p class="form-group" style="color: light-green;">' . $status . '</p>';
+            echo '<p class="form-group" style="color: green;">' . $status . '</p>';
           }
-        ?>
+          ?>
         </td>
       </tr>
     </table>
   </form>
+</div>
   <br /><br />
   <div class="feedback-container">
     <form method="post" action="project.php">

@@ -47,6 +47,7 @@ if($role=="Admin")
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="../css.css">
+    <link rel="icon" href='../images/logo1.png' type="image/x-icon">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style>
 	body
@@ -64,7 +65,7 @@ if($role=="Admin")
 <table width="100%"  border="0"cellspacing="00" cellpadding="00">
   <tr bgcolor="#D2691E">
     <th width="74" scope="col">&nbsp;</th>
-    <th width="164" scope="col"><a href="../Admin.php"><img src="../logo1.png" alt="LOGO"/></a></th>
+    <th width="164" scope="col"><a href="../Admin.php"><img src="../images/logo1.png" alt="LOGO" height="40" /></a></th>
     <th width="646" scope="col"><font size="8" color="White">Project Managenent System</font></th>
     <th width="140" scope="col"><font color="White" size="5">
 	<?php
@@ -137,13 +138,13 @@ if($role=="Admin")
            <br/><br/>
            <td>&nbsp; <br/></td>
            <td align="right"><br/><font size="5">Student ID&nbsp;:&nbsp;</font></td>
-           <td><br/><input  id="in"type="text" name="sid" value="<?php echo $row['s_id'];?>"></td>
+           <td><br/><input  id="in"type="text" name="sid" value="<?php echo isset($row['s_id'])?$row['s_id']:'';?>"></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Faculty ID&nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="text" name="faid" value="<?php echo $row['f_id'];?>"></td>
+    <td><input id="in" type="text" name="faid" value="<?php echo isset($row['f_id'])?$row['f_id']:'';?>"></td>
     <td>&nbsp;</td>
   </tr>
   <tr>

@@ -15,7 +15,7 @@ if (empty($_SESSION['User'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
       body {
-        background-image: url(login.jpg);
+        background-image: url('images/login.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -58,9 +58,9 @@ if (empty($_SESSION['User'])) {
               <div class="form-group">
                 <label for="role">Login As:</label>
                 <select class="form-control" name="role">
-                  <option value="Student">Student</option>
-                  <option value="Faculty">Faculty</option>
                   <option value="Admin">Admin</option>
+                  <option value="Faculty">Faculty</option>
+                  <option value="Student">Student</option>
                 </select>
               </div>
               <?php

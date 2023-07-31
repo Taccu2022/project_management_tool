@@ -53,6 +53,7 @@ if($role=="Admin")
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="../css.css">
+    <link rel="icon" href='../images/logo1.png' type="image/x-icon">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style>
 	body
@@ -70,7 +71,7 @@ if($role=="Admin")
 <table width="100%"  border="0"cellspacing="00" cellpadding="00">
   <tr bgcolor="#D2691E">
     <th width="74" scope="col">&nbsp;</th>
-    <th width="164" scope="col"><a href="../Admin.php"><img src="../logo1.png" alt="LOGO"/></a></th>
+    <th width="164" scope="col"><a href="../Admin.php"><img src="../images/logo1.png" alt="LOGO" height="40"/></a></th>
     <th width="646" scope="col"><font size="8" color="White">Project Managenent System</font></th>
     <th width="140" scope="col"><font color="White" size="5">
 	<?php
@@ -143,7 +144,7 @@ if($role=="Admin")
        <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Faculty ID&nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="text" name="fid" value="<?php echo $row['f_id'];?>"/></td>
+    <td><input id="in" type="text" name="fid" value="<?php echo isset($row['f_id'])?$row['f_id']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
        
@@ -151,31 +152,31 @@ if($role=="Admin")
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Name&nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="text" name="faname" value="<?php echo $row['name'];?>"/></td>
+    <td><input id="in" type="text" name="faname" value="<?php echo isset($row['name'])?$row['name']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Email&nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="email" name="faemail" value="<?php echo $row['email'];?>"/></td>
+    <td><input id="in" type="email" name="faemail" value="<?php echo isset($row['email'])?$row['email']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Phone&nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="text" name="faphone" value="<?php echo $row['phone'];?>"/></td>
+    <td><input id="in" type="text" name="faphone" value="<?php echo isset($row['phone'])?$row['phone']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Password &nbsp;:&nbsp;</font></td>
-    <td><input id="in" type="password" name="fapass" value="<?php echo $row['password'];?>"/></td>
+    <td><input id="in" type="password" name="fapass" value="<?php echo isset($row['password'])?$row['password']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
     <td align="right"><font size="5">Qualification&nbsp;:&nbsp;</font></td>
-    <td><input  id="in" type="text" name="faqualification" value="<?php echo $row['qualification'];?>"/></td>
+    <td><input  id="in" type="text" name="faqualification" value="<?php echo isset($row['qualification'])?$row['qualification']:'';?>"/></td>
     <td>&nbsp;</td>
   </tr>
   

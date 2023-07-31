@@ -10,28 +10,28 @@
         <div class="navbar-collapse collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/ADMIN/student.php">Add Student</a>
+                    <a class="nav-link" href="./ADMIN/student.php">Add Student</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ADMIN/faculty.php">Add Faculty</a>
+                    <a class="nav-link" href="./ADMIN/faculty.php">Add Faculty</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/ADMIN/stsearch.php">Search Student</a>
+                    <a class="nav-link" href="./ADMIN/stsearch.php">Search Student</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ADMIN/fa_search.php">Search Faculty</a>
+                    <a class="nav-link" href="./ADMIN/fa_search.php">Search Faculty</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ADMIN/allocate.php">Allocate</a>
+                    <a class="nav-link" href="./ADMIN/allocate.php">Allocate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ADMIN/skill.php">Skill Matrix</a>
+                    <a class="nav-link" href="./ADMIN/skill.php">Skill Matrix</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ADMIN/report.php">Reports</a>
+                    <a class="nav-link" href="./ADMIN/report.php">Reports</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-logout active" href="logout.php">Logout</a>
+                    <a class="btn btn-logout active" href="./logout.php">Logout</a>
                 </li>
             </ul>
         </div>

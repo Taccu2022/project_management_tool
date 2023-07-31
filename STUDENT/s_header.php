@@ -8,8 +8,8 @@
   <link rel="icon" href='../images/logo1.png' type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../admin.css">
-	<link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="../styles/admin.css">
+	<link rel="stylesheet" href="../styles/project.css">
 </head>
 
 <body>

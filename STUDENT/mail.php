@@ -50,28 +50,29 @@ elseif($role=="Faculty")
 else   
 {
 ?>
-      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="../css.css">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style>
-	body
-	{
-		background-image:url(../background.png);
-		background-repeat: no-repeat; 
-		background-attachment: fixed;
-		background-size: 100% 100%;
-	}
-</style>
-<title>Project Management System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Project Management System</title>
+    <link rel="icon" href='../images/logo1.png' type="image/x-icon">
+    <style>
+    	body
+    	{
+    		background-image:url(../background.png);
+    		background-repeat: no-repeat; 
+    		background-attachment: fixed;
+    		background-size: 100% 100%;
+    	}
+    </style>
 </head>
 <div>
 <body>
     <table width="100%"  border="0"cellspacing="00" cellpadding="00">
   <tr bgcolor="#D2691E">
     <th width="74" scope="col">&nbsp;</th>
-    <th width="164" scope="col"><a href="../Admin.php"><img src="../logo1.png" alt="LOGO"/></a></th>
+    <th width="164" scope="col"><a href="../Admin.php"><img src="../images/logo1.png" alt="LOGO" height="40" /></a></th>
     <th width="646" scope="col"><font size="8" color="White">Project Managenent System</font></th>
     <th width="140" scope="col"><font color="White" size="5">
 	<?php
@@ -132,7 +133,7 @@ else
                         <br/><br/>
                         <div style="background-color: beige; width: 40%; margin-left: 5%; border: black;">
                         <br/><br/>
-                        <font size="5">To : &nbsp;&nbsp; </font><input id="in" type="text" name="to" readonly value="<?php echo $std["f_id"];?>"/><br/><br/>
+                        <font size="5">To : &nbsp;&nbsp; </font><input id="in" type="text" name="to" readonly value="<?php echo isset($std["f_id"])?$std["f_id"]:'';?>"/><br/><br/>
                         <font size="5">  From : </font><input id="in" type="text" name="from" value="<?php echo $user;?>" readonly/><br/><br/>
                         <textarea name="msg" cols="30" rows="5" placeholder="Message" ></textarea><br/><br/>
                         <input id="bt" type="submit" value="Send" name="submit"/>

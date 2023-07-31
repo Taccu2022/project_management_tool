@@ -28,6 +28,7 @@ if (empty($_SESSION['User'])) {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" href='../images/logo1.png' type="image/x-icon">
         <style>
             body {
                 background-image: url(../background.png);
@@ -49,7 +50,10 @@ if (empty($_SESSION['User'])) {
         <table width="100%" border="0" cellspacing="00" cellpadding="00">
             <tr bgcolor="#D2691E">
                 <th width="74" scope="col">&nbsp;</th>
-                <th width="164" scope="col"><a href="../Admin.php"><img src="../images/logo1.png" alt="LOGO" /></a></th>
+                <th width="164" scope="col"><a href="../Admin.php">
+                    <img src="../images/logo1.png" alt="LOGO" height="40" />
+                    </a>
+                </th>
                 <th width="646" scope="col"><font size="8" color="White">Project Management System</font></th>
                 <th width="140" scope="col"><font color="White" size="5">
                         <?php
